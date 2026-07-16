@@ -186,14 +186,14 @@ const BookingSidebar = ({ trek, onBook }) => {
 
         <div className="grid grid-cols-2 gap-2">
           <a
-            href="tel:+918279888470"
+            href="tel:+918076533785"
             className="flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-primary-200
                        text-primary-700 font-semibold text-sm hover:bg-primary-50 transition-colors"
           >
             <Phone className="w-4 h-4" /> Call Us
           </a>
           <a
-            href="https://wa.me/918279888470"
+            href="https://wa.me/8076533785"
             target="_blank" rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 py-3 rounded-xl bg-green-50 border-2 border-green-200
                        text-green-700 font-semibold text-sm hover:bg-green-100 transition-colors"

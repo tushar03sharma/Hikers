@@ -3,6 +3,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 import ScrollToTop from '../components/layout/ScrollToTop';
+import WhatsAppButton from '../components/ui/WhatsAppButton';
+
 
 const pageVariants = {
   initial: { opacity: 0, y: 16 },
@@ -32,6 +34,8 @@ export default function MainLayout() {
 
       <Footer />
       <ScrollToTop />
+      <WhatsAppButton />
     </div>
   );
 }
+
