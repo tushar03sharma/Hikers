@@ -1,8 +1,8 @@
 export const galleryImages = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1606298855672-3efb63017be8?w=400&q=70',
+    url: '/trek-2.png',
+    thumb: '/trek-3.png',
     caption: 'Kedarkantha Summit at Sunrise',
     trek: 'Kedarkantha Trek',
     category: 'Summits',
@@ -11,8 +11,8 @@ export const galleryImages = [
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=70',
+    url: '/trek-4.png',
+    thumb: '/trek-5.png',
     caption: 'Snow-capped Himalayan Peaks',
     trek: 'Buran Ghati Trek',
     category: 'Landscapes',
@@ -21,8 +21,8 @@ export const galleryImages = [
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&q=70',
+    url: '/trek-1.png',
+    thumb: '/trek-2.png',
     caption: 'Trekkers on the Ridge',
     trek: 'Rupin Pass Trek',
     category: 'People',
@@ -31,8 +31,8 @@ export const galleryImages = [
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1587474260584-136574297664?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1587474260584-136574297664?w=400&q=70',
+    url: '/trek-3.png',
+    thumb: '/trek-4.png',
     caption: 'Valley of Flowers in Full Bloom',
     trek: 'Valley of Flowers Trek',
     category: 'Flora',
@@ -41,8 +41,8 @@ export const galleryImages = [
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1506905489489-53bb1cf8f7e5?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1506905489489-53bb1cf8f7e5?w=400&q=70',
+    url: '/trek-5.png',
+    thumb: '/trek-1.png',
     caption: 'Dayara Bugyal Golden Meadow',
     trek: 'Dayara Bugyal Trek',
     category: 'Landscapes',
@@ -51,8 +51,8 @@ export const galleryImages = [
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=400&q=70',
+    url: '/trek-2.png',
+    thumb: '/trek-3.png',
     caption: 'Har Ki Dun Valley Vista',
     trek: 'Har Ki Dun Trek',
     category: 'Landscapes',
@@ -61,8 +61,8 @@ export const galleryImages = [
   },
   {
     id: 7,
-    url: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=400&q=70',
+    url: '/trek-4.png',
+    thumb: '/trek-5.png',
     caption: 'Base Camp at Dusk',
     trek: 'Kedarkantha Trek',
     category: 'Camping',
@@ -71,8 +71,8 @@ export const galleryImages = [
   },
   {
     id: 8,
-    url: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=400&q=70',
+    url: '/trek-1.png',
+    thumb: '/trek-2.png',
     caption: 'Mountain Trail Through Pine Forest',
     trek: 'Har Ki Dun Trek',
     category: 'Forests',
@@ -81,8 +81,8 @@ export const galleryImages = [
   },
   {
     id: 9,
-    url: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800&q=80',
-    thumb: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=400&q=70',
+    url: '/trek-3.png',
+    thumb: '/trek-4.png',
     caption: 'Milky Way over High Camp',
     trek: 'Buran Ghati Trek',
     category: 'Night Sky',
