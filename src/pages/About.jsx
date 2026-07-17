@@ -16,7 +16,7 @@ const team = [
     name: 'Rajan Sharma',
     role: 'Founder & Lead Guide',
     bio: 'IMF-certified mountaineer with 15+ years guiding experience. Summited 6 Himalayan peaks above 6000m. Born and raised in Sankri.',
-    avatar: 'https://i.pravatar.cc/200?img=12',
+    avatar: '/avatar-1.png',
     treks: 500,
     certifications: ['IMF Certified', 'Wilderness First Aid', 'Avalanche Level 2'],
   },
@@ -25,7 +25,7 @@ const team = [
     name: 'Priya Negi',
     role: 'Operations Manager',
     bio: 'Trek logistics expert with a decade of experience coordinating seamless high-altitude expeditions across Uttarakhand.',
-    avatar: 'https://i.pravatar.cc/200?img=47',
+    avatar: '/avatar-1.png',
     treks: 300,
     certifications: ['MBA Tourism', 'Emergency Response', 'Altitude Sickness Expert'],
   },
@@ -34,7 +34,7 @@ const team = [
     name: 'Deepak Rawat',
     role: 'Senior Trek Leader',
     bio: 'Local Garhwali guide who knows every trail like the back of his hand. Expert naturalist with deep knowledge of Himalayan flora and fauna.',
-    avatar: 'https://i.pravatar.cc/200?img=68',
+    avatar: '/avatar-1.png',
     treks: 420,
     certifications: ['IMF Certified', 'Nature Interpreter', 'First Aid Expert'],
   },
@@ -43,7 +43,7 @@ const team = [
     name: 'Ananya Bisht',
     role: 'Safety & Wellness Officer',
     bio: 'Sports medicine professional ensuring every trekker is acclimatised, healthy, and prepared. Your safety is her sole focus.',
-    avatar: 'https://i.pravatar.cc/200?img=25',
+    avatar: '/avatar-1.png',
     treks: 200,
     certifications: ['Sports Medicine', 'Wilderness EMT', 'Yoga Instructor'],
   },
@@ -360,7 +360,7 @@ export default function About() {
               "The mountains have always been there. Our job is simply to help more people experience their magic — safely, responsibly, and unforgettably."
             </p>
             <div className="flex items-center justify-center gap-3">
-              <img src="https://i.pravatar.cc/80?img=12" alt="Rajan Sharma" className="w-12 h-12 rounded-full ring-2 ring-primary-400" />
+              <img src="/avatar-1.png" alt="Rajan Sharma" className="w-12 h-12 rounded-full ring-2 ring-primary-400" />
               <div className="text-left">
                 <p className="text-white font-bold">Rajan Sharma</p>
                 <p className="text-white/60 text-sm">Founder, SummitSeek Adventures</p>
