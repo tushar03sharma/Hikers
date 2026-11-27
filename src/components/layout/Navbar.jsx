@@ -301,7 +301,7 @@ export default function Navbar() {
                   whileHover={{ rotate: [0, -5, 5, 0], scale: 1.05 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <Mountain className="w-5.5 h-5.5 text-white" strokeWidth={2.5} />
+                  <Mountain className="w-5 h-5 text-white" strokeWidth={2.5} />
                 </motion.div>
                 <div>
                   <p className={cn('text-lg font-bold leading-none tracking-tight transition-colors duration-300', logoColor)}>

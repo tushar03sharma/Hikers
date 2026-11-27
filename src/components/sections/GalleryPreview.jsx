@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ZoomIn, ArrowRight } from 'lucide-react';
@@ -10,6 +10,12 @@ const previewImages = galleryImages.slice(0, 6);
 
 export default function GalleryPreview() {
   const [lightbox, setLightbox] = useState(null);
+
+  // Lock body scroll when lightbox is open
+  useEffect(() => {
+    document.body.style.overflow = lightbox ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [lightbox]);
 
   return (
     <section className="section-py bg-surface">
