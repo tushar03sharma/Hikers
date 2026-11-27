@@ -282,7 +282,7 @@ export const treks = [
     region: 'Uttarakhand',
     difficulty: 'Hard',
     duration: 10,
-    maxAltitude: 17,
+    maxAltitude: 17000,
     price: 17999,
     originalPrice: 21999,
     rating: 4.9,

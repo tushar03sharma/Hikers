@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -233,6 +233,12 @@ export default function TrekDetail() {
   const [lightboxImg, setLightboxImg] = useState(null);
   const tabsRef = useRef(null);
   const heroRef = useRef(null);
+
+  // Lock body scroll when lightbox is open
+  useEffect(() => {
+    document.body.style.overflow = lightboxImg ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [lightboxImg]);
 
   const { scrollYProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '35%']);
@@ -477,7 +483,7 @@ export default function TrekDetail() {
                   <div className="bg-white rounded-3xl p-7 shadow-card border border-dark-100">
                     <div className="flex items-center justify-between mb-6">
                       <h2 className="text-xl font-black text-dark-900">Day-by-Day Itinerary</h2>
-                      <span className="text-sm text-dark-400 font-medium">{trek.duration + 1} days</span>
+                      <span className="text-sm text-dark-400 font-medium">{trek.duration} nights / {trek.duration + 1} days</span>
                     </div>
 
                     {trek.itinerary.length > 0 ? (
@@ -671,7 +677,7 @@ export default function TrekDetail() {
       </div>
 
       {/*  Mobile Bottom CTA  */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-dark-100 p-4 z-50 flex items-center gap-3 shadow-glass">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-dark-100 p-4 z-40 flex items-center gap-3 shadow-glass">
         <div className="flex-1">
           <p className="text-xs text-dark-400 font-medium">Starting from</p>
           <p className="text-xl font-black text-dark-900">{formatPrice(trek.price)}</p>

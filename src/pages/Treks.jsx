@@ -43,7 +43,6 @@ const CheckItem = ({ label, checked, onChange, badge, badgeColor }) => (
           ? 'bg-primary-600 border-primary-600'
           : 'border-dark-200 group-hover:border-primary-400 bg-white'
       )}
-      onClick={onChange}
     >
       {checked && (
         <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
@@ -51,7 +50,7 @@ const CheckItem = ({ label, checked, onChange, badge, badgeColor }) => (
         </svg>
       )}
     </div>
-    <span className="text-sm text-dark-600 group-hover:text-dark-900 transition-colors flex-1 select-none" onClick={onChange}>
+    <span className="text-sm text-dark-600 group-hover:text-dark-900 transition-colors flex-1 select-none">
       {label}
     </span>
     {badge && (
@@ -59,6 +58,7 @@ const CheckItem = ({ label, checked, onChange, badge, badgeColor }) => (
         {badge}
       </span>
     )}
+    <input type="checkbox" checked={checked} onChange={onChange} className="sr-only" />
   </label>
 );
 
