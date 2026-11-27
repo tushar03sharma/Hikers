@@ -73,7 +73,7 @@ export default function Contact() {
     const e = {};
     if (!form.name.trim()) e.name = 'Your name is required';
     if (!form.email.trim() || !/\S+@\S+\.\S+/.test(form.email)) e.email = 'A valid email is required';
-    if (!form.phone.trim() || form.phone.replace(/\D/, '').length < 10) e.phone = 'Valid phone number required';
+    if (!form.phone.trim() || form.phone.replace(/\D/g, '').length < 10) e.phone = 'Valid phone number required';
     if (!form.message.trim() || form.message.trim().length < 20) e.message = 'Please write at least 20 characters';
     return e;
   };

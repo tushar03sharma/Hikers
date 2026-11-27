@@ -87,7 +87,7 @@ export default function WhyChooseUs() {
               {/* Hover gradient border effect */}
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-primary-100 to-secondary-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
 
-              <div className={`w-13 h-13 rounded-2xl flex items-center justify-center mb-5 ${color} w-14 h-14`}>
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-5 ${color}`}>
                 <Icon className="w-7 h-7" strokeWidth={1.8} />
               </div>
               <h3 className="text-lg font-bold text-dark-900 mb-2 leading-snug">{title}</h3>

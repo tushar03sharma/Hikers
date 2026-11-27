@@ -86,15 +86,15 @@ const milestones = [
 ];
 
 /*  Stat Counter  */
-const StatCounter = ({ value, suffix, label }) => {
+const StatCounter = ({ value, suffix, label, white = false }) => {
   const [ref, inView] = useInView({ threshold: 0.5 });
   const count = useCountUp(value, 2000, inView);
   return (
     <div ref={ref} className="text-center">
-      <p className="text-4xl md:text-5xl font-black text-primary-600">
+      <p className={`text-4xl md:text-5xl font-black ${white ? 'text-white' : 'text-primary-600'}`}>
         {count.toLocaleString()}{suffix}
       </p>
-      <p className="text-dark-500 font-medium text-sm mt-1">{label}</p>
+      {label && <p className={`font-medium text-sm mt-1 ${white ? 'text-white/80' : 'text-dark-500'}`}>{label}</p>}
     </div>
   );
 };
@@ -237,7 +237,7 @@ export default function About() {
                 >
                   <Icon className="w-7 h-7 text-white/80" strokeWidth={1.8} />
                   <div>
-                    <StatCounter value={value} suffix={suffix} label="" />
+                    <StatCounter value={value} suffix={suffix} label="" white />
                     <p className="text-white/80 text-xs font-semibold mt-1">{label}</p>
                   </div>
                 </motion.div>
